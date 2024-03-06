@@ -867,10 +867,10 @@ Start Counter Section
 						<span>Sportsmans Drive, West Lakes, Australia</span>
 					</div>
 
-					<div class="con-info clearfix">
+					<!-- <div class="con-info clearfix">
 						<i class="tf-ion-ios-telephone-outline"></i>
 						<span>Phone: +61-424-749403</span>
-					</div>
+					</div> -->
 
 					<!-- <div class="con-info clearfix">
 						<i class="tf-ion-iphone"></i>
@@ -879,7 +879,7 @@ Start Counter Section
 
 					<div class="con-info clearfix">
 						<i class="tf-ion-ios-email-outline"></i>
-						<span>Email: <a href="mailto:">info.swimplify@gmail.com</a></span>
+						<span>Email: <a href="mailto:info.swimplify@gmail.com">info.swimplify@gmail.com</a></span>
 					</div>
 				</div>
 			</div>
@@ -933,9 +933,9 @@ Start Counter Section
 			<div class="col-lg-12">
 				<!-- copyright -->
 				<div class="copyright text-center">
-					<a href="index.html">
+					<!-- <a href="index.html">
 						<img src="images/logo.png" alt="Website Logo" width="150" class="d-inline-block align-text-top"/>
-					</a>
+					</a> -->
 					<p class="mt-3">Copyright
 						&copy; <script>
 							document.write(new Date().getFullYear())

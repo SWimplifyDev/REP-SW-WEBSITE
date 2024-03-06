@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Refresh" content="0; url='https://gtm-agora-forms.streamlit.app/Promotions'" />
+	<!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- Font Awesome 5 -->
+        <script src="https://kit.fontawesome.com/19bb01d8b0.js" crossorigin="anonymous"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- My Script -->
+        <script src="js/functions.js"></script>
+        <!-- My Style -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>AGORA Config</title>
+    </head>
+    <body>
+        <div class="ribbon">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <img src="images/telstraLogo.png" alt="Telstra Logo">
+                    </div>                    
+                </div> 
+                <div class="col-8">
+                    <div class="appName">
+                        AGORA Ops
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="title">
+                    <h1>Mobility Promotion</h1>
+                </div>
+                <div id="summary" hidden>
+                    <div class="resuls">
+                      <label for="">Segment:</label>
+                      <p id="segmentSum"></p>
+                      <label for="">Applied by:</label>
+                      <p id="applied"></p>
+                      <label for="">Type:</label>
+                      <p id="type">Demo</p>
+                      <label for="">Display Name:</label>
+                      <p id="name"></p>
+                      <label for="">Business Rules:</label>
+                      <p id="rules"></p>
+                      <label for="">Order Type:</label>
+                      <p id="orderType"></p>
+                      <label for="">Start Date:</label>
+                      <p id="starts"></p>
+                      <label for="">End Date:</label>
+                      <p id="ends"></p>
+                      <label for="">Price Point:</label>
+                      <p id="pricePoint"></p>
+                      <label for="">Devices:</label>
+                      <p id="devicesSumary"></p>
+                      <label for="">Email Notification:</label>
+                      <p id="emailNotifySummary"></p>
+                      <label for="">Stock On Hand (SOH):</label>
+                      <pre id="stockOnHandSum"></pre>
+                    </div>                    
+                </div>
+                
+                <div id="selctionMenu">
+                    <div class="row1">
+                        <div class="row">
+                          <!-- Segment: -->
+                          <div class="col-3">
+                            <label for="segment" class="form-label">Segment:</label>
+                            <div id="segment">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="segCon">
+                                    <label class="form-check-label" for="segCon">
+                                      CON
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="segSmb">
+                                    <label class="form-check-label" for="segSmb">
+                                      SMB
+                                    </label>
+                                  </div>  
+                            </div>
+
+                          </div>
+                          <!-- Applied by: -->
+                          <div class="col-3">
+                            <label for="appliedBy" class="form-label">Applied by:</label>
+                            <select class="form-select" id="appliedBy">
+                              <option selected>-Select one-</option>
+                              <option value="boh">BoH</option>
+                              <option value="base_plus">Base Plus</option>
+                              <option value="moem">MOEM</option>
+                              <option value="auto">AUTO</option>
+                            </select>
+                          </div>
+
+                          <!-- Type: -->
+                          <div class="col-3">
+                            <label for="type" class="form-label">Type:</label>
+                            <div id="type">
+                              <div class="form-check">
+                                  <input onclick="hideElement('onlyforCoded',true)" class="form-check-input" type="radio" name="promoType" id="included">
+                                  <label class="form-check-label" for="included">
+                                    Included
+                                  </label>
+                                </div>
+
+                                <div class="form-check">                      
+                                  <input onclick="hideElement('onlyforCoded',false)" class="form-check-input" type="radio" name="promoType" id="coded">
+                                  <label class="form-check-label" for="coded">
+                                    Coded
+                                  </label>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- CONDITION Coded selected - Promo Code -->
+                          <div class="col-3">
+                            <div id="onlyforCoded" hidden>
+                              <label for="promoCode" class="form-label">Promo code:</label>
+                              <input type="text" id="promoCode" class="form-control" placeholder="e.g. DOLLARS1X250">    
+                            </div>
+                          </div>
+                        </div> 
+                        <hr>   
+                    </div>
+
+                    <div class="row2">
+                      <div class="row">
+                          <!-- Display Name: -->
+                          <div class="col-6">
+                            <label for="displayName" class="form-label">Display Name:</label>
+                            <input type="text" id="displayName" class="form-control" placeholder="e.g. $200 off your bill on Samsung Galaxy S21">
+                          </div>
+                          <!-- Business rules: -->
+                          <div class="col-6">
+                            <label for="businessRule" class="form-label">Business rules:</label>
+                            <textarea class="form-control" id="businessRule" rows="3" placeholder="e.g. Must Purchase a S21 Device"></textarea>
+                          </div>
+                      </div>
+                      <hr>      
+                    </div>
+
+                    <div class="row3">
+                        <div class="row">
+                          <!-- Order Type: -->           
+                          <div class="col-4">
+                            <label for="orderType" class="form-label">Order Type:</label>
+                            <div id="orderType">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="new">
+                                    <label class="form-check-label" for="new">
+                                      New
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="porting">
+                                    <label class="form-check-label" for="porting">
+                                      Porting
+                                    </label>
+                                  </div>  
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="recon">
+                                    <label class="form-check-label" for="recon">
+                                      Recon
+                                    </label>
+                                  </div>  
+                            </div>
+                          </div>
+                          <!-- Start date: -->
+                          <div class="col-4">
+                            <label for="startDate" class="form-label">Start date:</label>
+                            <input type="datetime-local" class="form-control" id="startDate">
+                          </div>
+                          <!-- End date: -->
+                          <div class="col-4">
+                            <label for="endDate" class="form-label">End date:</label>
+                            <input type="datetime-local" class="form-control" id="endDate">
+                          </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row4">
+                        <div class="row" id="pricePoint">
+                          <!-- Price Point: -->
+                          <label for="pricePoint">Price Point:</label>
+                            <div class="col-3">
+                                <!-- Mobile -->
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <div id="mobile">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mobileS">
+                                        <label class="form-check-label" for="mobileS">
+                                          S
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mobileM">
+                                        <label class="form-check-label" for="mobileM">
+                                          M
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mobileL">
+                                        <label class="form-check-label" for="mobileL">
+                                          L
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mobileXL">
+                                        <label class="form-check-label" for="mobileXL">
+                                          XL
+                                        </label>
+                                    </div>
+                                
+                                </div>
+                            
+                            </div>
+                            <div class="col-3">
+                                <!-- Tablet -->
+                                <label for="tablet" class="form-label">Tablet</label>
+                                <div id="tablet">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tabletXS">
+                                        <label class="form-check-label" for="tabletXS">
+                                          XS
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tabletS">
+                                        <label class="form-check-label" for="tabletS">
+                                          S
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tabletM">
+                                        <label class="form-check-label" for="tabletM">
+                                          M
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tabletL">
+                                        <label class="form-check-label" for="tabletL">
+                                          L
+                                        </label>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <!-- Tablet -->
+                                <label for="mbb" class="form-label">MBB</label>
+                                <div id="mbb">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mbbXS">
+                                        <label class="form-check-label" for="mbbXS">
+                                          XS
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mbbS">
+                                        <label class="form-check-label" for="mbbS">
+                                          S
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mbbM">
+                                        <label class="form-check-label" for="mbbM">
+                                          M
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mbbL">
+                                        <label class="form-check-label" for="mbbL">
+                                          L
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row5">
+                        <div class="row">
+                          <!-- Devices: -->
+                          <div class="col-6">
+                            <label for="devices" class="form-label">Devices:</label>
+                            <textarea class="form-control" id="devices" rows="3" placeholder="e.g. S21 128GB and 256GB"></textarea>
+                          </div>
+                          <!-- Email notification: -->
+                          <div class="col-6">
+                            <label for="emailNotify" class="form-label">Email notification:</label>
+                            <textarea class="form-control" id="emailNotify" rows="3" placeholder="e.g. Get $250 off your bill on Samsung S21+5G. When you add to a mobile plan. Credit applied by 2nd bill. Offer ends 8 April."></textarea>
+                          </div>
+                        </div> 
+                        <hr>    
+                    </div>
+                    <div class="row6">
+                      <div class="row">
+                        <!-- SOH: -->
+                        <div class="col-6">
+                          <label for="stockOnHand" class="form-label">Stock on Hand:</label>
+                          <textarea class="form-control" id="stockOnHand" rows="3" placeholder="You can Copy and Paste data from spread sheets."></textarea>
+                        </div>
+                        <!-- Forecast: -->
+                        <div class="col-6" hidden>
+                          <label for="forecast" class="form-label">Forecast:</label>
+                          <textarea class="form-control" id="forecast" rows="3" placeholder="e.g. Get $250 off your bill on Samsung S21+5G. When you add to a mobile plan. Credit applied by 2nd bill. Offer ends 8 April."></textarea>
+                        </div>
+                      </div>     
+                  </div>
+                </div>
+    
+            </div>
+        </div>
+        
+        <div class="menu">
+            <div class="row">
+                <div class="col-6">
+                    <div class="narrowLeft" data-bs-toggle="tooltip" data-bs-placement="top" title="Promos">
+                        <a href="promos.html">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col">
+                            <div id="editSummary" hidden>
+                                <div class="edit">
+                                  <button type="button" onclick="editContent()" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                                    <i class="far fa-edit"></i>
+                                  </button>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="col">
+                            <div id="printIcon" hidden>
+                                <div class="printer">
+                                  <!-- <button onclick="printPage()"> -->
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#printPDFDemostration" data-bs-toggle="tooltip" data-bs-placement="top" title="Save as PDF">
+                                  
+                                    <!-- <i class="fas fa-print"></i> -->
+                                    <i class="fas fa-save"></i>
+                                  </button>
+                                </div>
+                            </div>
+                            <div id="checkIcon">
+                                <div class="checked">
+                                  <button type="button" onclick="showSummary()" data-bs-toggle="tooltip" data-bs-placement="top" title="Review">
+                                    <i class="fas fa-check"></i>
+                                  </button>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="printPDFDemostration" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Saving file as PDF</h5>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              </div>
+              <div class="modal-body">
+                Please make sure you select "Save as PDF" on "Destination" Option as the image below shows:
+                <img src="images/saveAsPDF.png" alt="savingGuideImage">
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button onclick="goToPrint()" type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>

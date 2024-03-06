@@ -1,0 +1,214 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    min-height: 102vh;
+    background: linear-gradient(to right top,#0093e9, #80d0c7);
+}
+
+.form-label{
+    margin-top: 1rem;
+}
+.ribbon{
+    background: rgba(255, 255, 255, 0.6)
+}
+
+.logo img{
+    width: 50px;
+    background: transparent;
+}
+.appName{
+    font-weight: bolder;
+    color: darkblue;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.help-icon{
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.container{
+    margin-top: 10%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius:1rem;
+    z-index: 2;
+    position: relative;
+    backdrop-filter: blur(2rem);
+    
+}
+.question{
+    color: rgb(80,80,80);
+    padding: 30px;
+    text-align: center;
+}
+.options{
+    color: rgb(80,80,80);
+    text-align: center;
+    margin-top: 10%;
+}
+.options i{
+    color: rgb(80,80,80);
+    font-size: 4rem;
+}
+
+.menu{
+    padding: 30px;
+    text-align: center;
+}
+.menu i{
+    font-size: 3rem;
+    color: rgb(80,80,80);
+}
+
+.narrowLeft i,
+.edit i,
+.printer i{
+    z-index: 1;
+    position: relative;
+}
+
+
+.circle1,
+.circle2{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1{
+    top: 10%;
+    right: 10%;
+}
+.circle2{
+    left: 5%;
+    bottom: 40%;
+
+}
+
+.theFooter{
+    font-size: 0.8rem;
+    margin-top: 16rem;
+    text-align: center;
+}
+
+hr{
+    color: yellow;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.title,
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6,
+.resuls{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.row6{
+    padding-bottom: 10px;
+}
+
+.checked button,
+.edit button,
+.printer button{
+    background-color: transparent;
+    border-color: transparent;
+}
+.resuls label{
+    font-weight: bold;
+}
+
+label p{
+    font-weight: bold;
+}
+.link-to-configs a{
+    text-decoration: none;
+}
+
+/* Style for agora-config */
+
+.agora-config{
+    background: whitesmoke;
+}
+.screen-shoot img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.scrollspy {
+    position: relative;
+    height: 900px;
+    overflow: auto;
+}
+
+.modal-body img{
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome-message{
+    color: rgb(80,80,80);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.config-options{
+    color: rgb(104, 100, 100);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.options-list a{
+    text-decoration: none;
+    color: rgb(80,80,80);
+}
+
+.options-list li{
+    padding: .5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: .7rem;
+}
+
+.options-list li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.options-list{
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.options-list ul{
+    padding-bottom: 1rem;
+}
+
+.functButton{
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.headPrice{
+    font-weight: bold;
+}

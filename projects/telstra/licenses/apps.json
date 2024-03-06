@@ -1,0 +1,13 @@
+{
+    "telstra_license":
+    {
+        "topo":
+        {
+            "version":"5.1","status":"active"
+        },
+        "tot":
+        {
+            "version":"1.0","status":"active"
+        }
+    }
+}

@@ -1,0 +1,112 @@
+[class*="col"]{
+    /*border: 1px solid;*/
+    text-align: center;
+    
+}
+
+[class*="con"]{
+    /*border: 2px solid;*/
+    text-align: center;
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: rgb(0,0,0);
+}
+h1{
+    margin-top: 30px;
+    color: rgb(211,211,211);
+}
+p,
+h2,
+h4{
+    color: rgb(245,245,245);
+}
+#p2,
+#p3,
+#p4{
+    margin-top: 0.5px;
+    color:purple;
+    text-align: right;
+}
+#p5{
+    color: rgb(61, 49, 49);
+}
+
+.img_cheetah{
+    margin-top: 30px;
+    width: 300px;
+    height: auto;
+}
+#img_loading{
+    opacity: 0.3;
+    width: 50px;
+    height: auto;
+    display: none;
+}
+
+.bi-tornado{
+    font-size: 4rem;
+}
+
+.fas,
+.fab{
+    color: #404040;
+    font-size: 4rem;
+    text-shadow: 0 0 1rem rgb(83, 79, 79);   
+}
+
+/* Zoom In and Out animation for all icons*/
+#stockAPI,
+#consumer,
+#gaming,
+#students,
+#smallBusiness,
+#prepaid,
+#boost,
+#loyalty,
+#accessories,
+#salesforce{
+    transition: transform .3s; /* Animation */
+ }
+#stockAPI:hover,
+#consumer:hover,
+#gaming:hover,
+#students:hover,
+#smallBusiness:hover,
+#prepaid:hover,
+#boost:hover,
+#loyalty:hover,
+#accessories:hover,
+#salesforce:hover{
+    transform: scale(1.5); /* (150% zoom)*/
+  }
+
+/* Tables hidden until data is found*/
+/*#all_tables,*/
+#stock_api_table,
+#consumer_table,
+#gaming_table,
+#student_table,
+#small_business_table,
+#prepaid_table,
+#boost_table,
+#ly_con_table,
+#ly_dv_table,
+#ly_smb_table,
+#acc_con_table,
+#acc_dv_table{
+    display: none;
+}
+
+#maui_segments,
+#maui3_segments,
+#sales_force_segment{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(128,128,128);
+}
+
+#all_tables{
+    font-size: .7rem;
+}

@@ -144,7 +144,7 @@ End Sticky Navigation
 <!--
 		Start About Section
 		==================================== -->
-<section class="bg-one about section">
+<section id="about" class="bg-one about section">
 	<div class="container">
 		<div class="row">
 

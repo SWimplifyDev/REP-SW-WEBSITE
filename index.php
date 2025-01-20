@@ -112,7 +112,7 @@ Sticky Navigation
   <div class="navbar-header w-100">
     <nav class="navbar navbar-expand-lg navbar-dark px-0">
       <!-- logo -->
-      <a class="navbar-brand logo" href="index.html">
+      <a class="navbar-brand logo" href="index.php">
         <img src="images/logo.png" alt="Website Logo" width="150" class="d-inline-block align-text-top"/>
       </a>
       <!-- /logo -->
@@ -783,7 +783,7 @@ Start Counter Section
 						<img src="images/blog/blog-post-1.jpg" alt="amazing caves coverimage" class="img-fluid">
 					</div>
 					<div class="content">
-						<h3><a href="blog-single.html">Setting Up Your Python Playground</a></h3>
+						<h3><a href="https://github.com/SWimplifyDev/python-venv-quick-guide">Setting Up Your Python Playground</a></h3>
 						<p>
 							Welcome to our inaugural quick code guide! Today, we're diving into a fundamental skill for Python developers - setting
 							up a virtual environment.

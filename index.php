@@ -887,7 +887,7 @@ Start Counter Section
 
 					<div class="con-info clearfix">
 						<i class="tf-ion-ios-email-outline"></i>
-						<span>Email: <a href="mailto:team@swimplify.co">team@swimplify.co"</a></span>
+						<span>Email: <a href="mailto:team@swimplify.co">team@swimplify.co</a></span>
 					</div>
 				</div>
 			</div>

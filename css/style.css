@@ -661,6 +661,25 @@ a:hover {
   z-index: -1;
 }
 
+/* ===================================================================
+  All sections
+=================================================================== */
+
+.section-subtitle {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.highlighted-text span {
+  color: rgb(255, 255, 255);
+  background-color: rgb(16,129,131);
+}
+
+.section-subtitle span {
+  background-color: rgb(16,129,131);
+}
+
 /*=================================================================
   About us section
 ==================================================================*/
@@ -886,6 +905,15 @@ a:hover {
   margin: 15px 0;
 }
 
+.price-title-product {
+  background-color: #292F36;
+  padding: 2rem;
+}
+
+.price-title-product .value {
+  color: #57cbcc;
+  font-size: 30px;
+}
 .price-title {
   background-color: #292F36;
   padding: 30px 0 20px;
@@ -1021,6 +1049,13 @@ a:hover {
 .service-block .service-icon {
   margin-bottom: 10px;
   font-size: 50px;
+}
+
+.service-item {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #afbac4;
 }
 
 /*=================================================================
@@ -1961,3 +1996,9 @@ blockquote {
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.sticky-element {
+  position:sticky;
+  top: 80px;
+}

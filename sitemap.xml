@@ -16,6 +16,16 @@
       <priority>0.8</priority>
    </url>
    <url>
+      <loc>https://swimplify.co/#portfolio</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://swimplify.co/#products</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
       <loc>https://swimplify.co/#blog</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>

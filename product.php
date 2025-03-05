@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDC7RYYCZW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-RDC7RYYCZW');
+	</script>
+  	<!-- Basic Page Needs
+ 	================================================== -->
+  	<meta charset="utf-8">
+	<title>SWimplify>_ | Product</title>
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+    
+  	<!-- Favicon -->
+  	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+  	<!-- CSS
+  	================================================== -->
+  	<!-- Fontawesome Icon font -->
+  	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
+  	<!-- bootstrap.min css -->
+  	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  	<!-- Animate.css -->
+  	<link rel="stylesheet" href="plugins/animate-css/animate.css">
+  	<!-- Magnific popup css -->
+  	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+  	<!-- Slick Carousel -->
+  	<link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+  	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+  	<!-- Main Stylesheet -->
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <!-- Sticky Navigation
+==================================== -->
+<header id="navigation" class="navigation">
+  <div class="container">
+    <div class="navbar-header w-100">
+      <nav class="navbar navbar-expand-lg navbar-dark px-0">
+        <!-- logo -->
+        <a class="navbar-brand logo" href="index.php">
+          <img src="images/logo.png" alt="Website Logo" width="150" class="d-inline-block align-text-top"/>
+        </a>
+        <!-- /logo -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar01">
+          <ul class="navbar-nav navigation-menu ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#blog">Learn2Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#contact-us">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- End Sticky Navigation
+==================================== -->
+<div id="products" class="container mt-5">
+  <section class="product-container">
+    <div class="row">      
+  	  <div class="col-lg-6">
+    		<div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+    			<div class="item text-center">
+    				<div class="product-thumb">
+    					<img src="images/products/quadPower.png" class="img-fluid w-100" alt="Meghna">
+    				</div>
+    			</div>
+    			<div class="item text-center">
+    				<div class="product-thumb">
+    					<img src="images/products/quadPower.png" class="img-fluid w-100" alt="Meghna">
+    				</div>
+    			</div>
+    			<div class="item text-center">
+    				<div class="product-thumb">
+    					<img src="images/products/quadPower.png" class="img-fluid w-100" alt="Meghna">
+    				</div>
+    			</div>
+    		</div> <!-- end testimonial wrapper -->
+  	  </div> <!-- end col lg 12 -->
+      <div class="col-lg-6">
+        <h1 style="color: #57cbcc;">QuadPower Motor Driver Board</h1>
+        <div class="price-title-product">
+          <h5>High-Performance 4-Motor Controller</h5>
+		      <p><strong class="value">$80</strong> AUD</p>
+          <a class="btn btn-transparent" href="https://buy.stripe.com/dR67uvddj2iqbzabIO" target="_blank">Buy Now</a>
+		    </div>
+      </div>
+    </div> <!-- End row -->
+
+      <!-- Product Details -->
+      <div class="product-details">
+          <h2 class="highlighted-text mt-4"><span>Overview</span></h2>
+          <p>
+              Take control of your motors with QuadPower, a robust and efficient motor driver board designed for 
+              high-power applications. Whether you're building robots, CNC machines, or automation systems, QuadPower 
+              ensures precise motor control, high reliability, and powerful performance.
+          </p>
+          <h2 class="highlighted-text mt-4"><span>Key Features</span></h2>
+          <ul>
+              <li><span class="service-item">Control 4 Motors Independently</span> – Perfect for robotics, automation, and industrial applications.</li>
+              <li><span class="service-item">High-Power Support</span> – Operates with motor voltages up to 46V and delivers 2A continuous per channel (3A peak).</li>
+              <li><span class="service-item">Dual L298P H-Bridge Drivers</span> – Proven and reliable motor driver ICs for stable performance.</li>
+              <li><span class="service-item">PWM Speed Control</span> – Adjust motor speed dynamically using a Pulse Width Modulation (PWM) signal.</li>
+              <li><span class="service-item">Direction Control</span> – Set motor direction using simple logic inputs.</li>
+              <li><span class="service-item">Current Sensing Output</span> – Monitor real-time current consumption with an analog output ranging from -1V to 2.3V.</li>
+              <li><span class="service-item">Compact and Efficient Design</span> – Optimized for minimal heat generation and maximum performance.</li>
+              <li><span class="service-item">Plug & Play Connectivity</span> – Screw terminals and header pins for easy integration into your projects.</li>
+          </ul>
+          <h2 class="highlighted-text mt-4"><span>Technical Specifications</span></h2>
+          <ul>
+              <li><span class="service-item">Motor Voltage (VS)</span> : Up to 46V</li>
+              <li><span class="service-item">Logic Voltage (VSS)</span> : 5V (Microcontroller Compatible)</li>
+              <li><span class="service-item">Continuous Current</span> : 2A per channel</li>
+              <li><span class="service-item">Peak Current</span> : 3A (Short Pulses)</li>
+              <li><span class="service-item">Motor Channels</span> : 4 Independent Outputs</li>
+              <li><span class="service-item">Control Inputs</span> : PWM & Logic (IN1, IN2, EN)</li>
+              <li><span class="service-item">Current Sensing</span> : Analog Output (-1V to 2.3V)</li>
+              <li><span class="service-item">Protection</span> : Flyback Diodes</li>
+              <li><span class="service-item">Board Size</span> : Compact & Space-Efficient</li>
+          </ul>
+          <h2 class="highlighted-text mt-4"><span>Why Choose QuadPower?</span></h2>
+          <ul>
+              <li><span class="service-item">Reliable & Durable</span> – Built with high-quality components for long-lasting performance.</li>
+              <li><span class="service-item">Easy to Use</span> – Simple interface for seamless integration with Arduino, Raspberry Pi, ESP32, and more.</li>
+              <li><span class="service-item">Versatile Applications</span> – Ideal for robotics, drones, electric vehicles, CNC machines, and industrial automation.</li>
+          </ul>
+          
+          <h2 class="highlighted-text mt-4"><span>Applications</span></h2>
+          <ul>
+              <li><span class="service-item">Robotics & Drones</span> – Precise movement control for robotic arms and mobile robots.</li>
+              <li><span class="service-item">CNC & 3D Printers</span> – Reliable motor control for automated systems.</li>
+              <li><span class="service-item">Smart Vehicles</span> – Control motors in electric skateboards, carts, and more.</li>
+              <li><span class="service-item">Home & Industrial Automation</span> – Conveyor belts, smart actuators, and machinery.</li>
+          </ul>
+          <h2 class="highlighted-text mt-4"><span>What’s Included?</span></h2>
+          <ul>
+              <li><span class="service-item">1x QuadPower Motor Driver Board</span></li>
+              <li><span class="service-item">Screw Terminals & Header Pins for Easy Connection</span></li>
+              <li><span class="service-item"> Quick Start Guide & Online Documentation</span></li>
+          </ul>
+          <h2 class="highlighted-text mt-4"><span>Additional Resources</span></h2>
+          <ul>
+              <li><span class="service-item">Full Documentation & Datasheets</span> : <a href="https://github.com/SWimplifyDev/QuadPower-Motor-Driver" target="_blank">GitHub</a></li>
+              <li><span class="service-item">Support</span> : <a href="mailto:team@swimplify.co">team@swimplify.co</a></li>
+          </ul>
+          <div class="mt-4">
+          💡 Get Your QuadPower Today & Take Your Projects to the Next Level! 🚀
+          </div>
+      </div>
+
+  </section>
+</div>
+
+<!-- end Contact Area
+========================================== -->
+<footer id="footer" class="bg-one">
+	<div class="container">
+		<div class="row wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-lg-12">
+				<!-- copyright -->
+				<div class="copyright text-center">
+					<!-- <a href="index.html">
+						<img src="images/logo.png" alt="Website Logo" width="150" class="d-inline-block align-text-top"/>
+					</a> -->
+					<p class="mt-3">Copyright
+						&copy; <script>
+							document.write(new Date().getFullYear())
+						</script>. All Rights Reserved. <br> Powered by Us.</p>
+				</div>
+				<!-- /copyright -->
+
+			</div> <!-- end col lg 12 -->
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</footer> <!-- end footer -->
+
+	<!-- 
+	Essential Scripts
+	=====================================-->
+	
+	<!-- Main jQuery -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<!-- Bootstrap 3.1 -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- Slick Carousel -->
+	<script src="plugins/slick-carousel/slick.min.js"></script>
+	<!-- Portfolio Filtering -->
+	<script src="plugins/filterzr/jquery.filterizr.min.js"></script>
+	<!-- Magnific popup -->
+	<script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- wow.min Script -->
+	<script src="plugins/wow/wow.min.js"></script>
+	<!-- Custom js -->
+	<script src="js/script.js"></script>
+</body>
+</html>

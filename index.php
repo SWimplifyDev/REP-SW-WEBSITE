@@ -7,21 +7,24 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
 	  gtag('config', 'G-RDC7RYYCZW');
 	</script>
   	<!-- Basic Page Needs
  	================================================== -->
   	<meta charset="utf-8">
-	<title>SWimplify >_</title>
+	<title>SWimplify>_</title>
 
 	<!-- Mobile Specific Metas
   	================================================== -->
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
-  
+	
+	<!-- ChartJS
+	==================================================== -->
+	<script src="plugins/chart.js/dist/chart.umd.js"></script>
+
   	<!-- Favicon -->
-  	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
   	<!-- CSS
   	================================================== -->
@@ -71,8 +74,7 @@
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
-	<!--
-	Start Preloader
+	<!--Start Preloader
 	==================================== -->
 	<div class="preloader">
 		<div class="sk-cube-grid">
@@ -90,22 +92,22 @@
 	<!-- End Preloader
 	==================================== -->
 
- <!--
-Welcome Slider
+ <!-- Welcome Slider
 ==================================== -->
 
  <section class="hero-area overlay" style="background-image: url('images/banner/code-space-2.jpg');">
  	<div class="block">
- 		<h1>We Build Software <br>_for every need</h1>
- 		<p>We believe simple is better, helping businesses accross different industries to improve efficiency.
-			We have a range of products and services tailored to your needs and budget.</p>
-			<p>We Transform difficult into simple!!</p>
+	 	<h1>We Build Technology <br>_Simple, Powerful, and Smart</h1>
+ 		<p>
+			We believe simplicity is better. By merging software, hardware, and embedded systems,  
+		 	we create elegant solutions that improve efficiency without unnecessary complexity.
+		</p>
+		<p>We turn the difficult into simple, making technology work for you!</p>
  		<a href="#services" class="btn btn-transparent smooth-scroll">Explore Us</a>
  	</div>
  </section>
 
- <!-- 
-Sticky Navigation
+ <!-- Sticky Navigation
 ==================================== -->
 <header id="navigation" class="navigation">
 <div class="container">
@@ -134,7 +136,13 @@ Sticky Navigation
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Learn2Code</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#learn2code">Learn2Code</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Contact</a>
@@ -145,8 +153,7 @@ Sticky Navigation
   </div>
 </div>
 </header>
-<!--
-End Sticky Navigation
+<!-- End Sticky Navigation
 ==================================== -->
 
 <!--
@@ -163,23 +170,30 @@ End Sticky Navigation
 					<div class="border"></div>
 				</div>
 				<!-- /section title -->
+				 <!-- /section  subtitle -->
+				<h2 class="section-subtitle"><span>Where Innovation Meets Precision</span></h2>
 			</div>
 
 			<!-- About item -->
-			<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
 				<div class="block">
 					<div class="icon-box">
 						<i class="tf-tools"></i>
 					</div>
 					<!-- Express About Yourself -->
 					<div class="content text-center">
-						<h3 class="ddd">We're Creative</h3>
-						<p>
-							Creativity is the heartbeat of our operation. We believe in the power of imagination to 
-							transform businesses. Our team of skilled developers and designers don't just write code;
-							they craft elegant solutions that inspire and innovate. Whether it's streamlining operations,
-							enhancing user experiences, or building entirely new platforms, we infuse creativity into every
-							line of code we write.
+						<h3>We Build Beyond Code</h3>
+						<p class="text-left">
+							At <span class="service-item">SWimplify</span>, we don’t just develop software—we engineer 
+							solutions that merge <span class="service-item">software, hardware, and embedded systems.</span>
+							From crafting applications to designing PCBs, we bring creativity and precision.
+						</p>
+						<p class="text-left">
+							We specialize in <span class="service-item">seamless integration between digital and physical
+							systems</span>, ensuring every product is optimized for performance, scalability, and functionality. 
+							Whether it's <span class="service-item">software</span>, <span class="service-item">firmware</span>, 
+							or <span class="service-item">hardware</span> solutions, we push technology’s boundaries to 
+							deliver <span class="service-item">innovative, future-ready solutions</span>.
 						</p>
 					</div>
 				</div>
@@ -187,40 +201,44 @@ End Sticky Navigation
 			<!-- End About item -->
 
 			<!-- About item -->
-			<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
 				<div class="block">
 					<div class="icon-box">
 						<i class="tf-strategy"></i>
 					</div>
 					<!-- Express About Yourself -->
 					<div class="content text-center">
-						<h3>We're Professional</h3>
+						<h3>We Innovate, We Integrate</h3>
 						<p>
-							From the first handshake to the final deliverable, we approach every project with unwavering
-							dedication and integrity. Our team is composed of experts who take pride in their craft and
-							hold themselves to the highest standards of quality and accountability. We value clear 
-							communication, adhere to deadlines, and work tirelessly to ensure your project is a success.
+							Technology is evolving, and so are we. Our expertise spans:
 						</p>
+						<ul class="text-left">
+							<li><span class="service-item">Custom Software Development</span> – Web, desktop, and cloud solutions tailored to your needs.</li>
+							<li><span class="service-item">Embedded Systems & PCB Design</span> – Bridging hardware and software for seamless integration.</li>
+							<li><span class="service-item">Training & Coaching</span> – Empowering individuals and teams to master software and electronics.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<!-- End About item -->
 
 			<!-- About item -->
-			<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
 				<div class="block kill-margin-bottom">
 					<div class="icon-box">
 						<i class="tf-anchor2"></i>
 					</div>
 					<!-- Express About Yourself -->
 					<div class="content text-center">
-						<h3>We're Genius</h3>
+						<h3>We Are Professionals with a Passion for Excellence</h3>
 						<p>
-							Genius isn't just a claim; it's a standard we live up to. Our developers are the best in the industry,
-							each possessing a unique blend of technical mastery and creative problem-solving skills. We're not
-							satisfied with the status quo; we're constantly exploring new technologies and methodologies to stay
-							at the cutting edge of software development.
+							Quality, reliability, and efficiency define our work. We uphold the highest standards in:
 						</p>
+						<ul class="text-left">
+							<li><span class="service-item">Software architecture & design</span> for scalable, high-performance applications.</li>
+							<li><span class="service-item">Hardware prototyping & manufacturing</span> for robust, real-world solutions.</li>
+							<li><span class="service-item">User experience & interface design</span>  for elegant, intuitive interactions.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -238,18 +256,12 @@ End Sticky Navigation
 			</div>
 			<div class="col-lg-6">
 				<div class="content-block">
-					<h2>We Engineer Digital Magic</h2>
+					<h2 class="section-subtitle text-left"><span>Empowering the Future Through Knowledge</span></h2>
 					<p>
-						We conjure technological marvels, transcending lines of code to create experiences that defy expectations.
-					   	Our team's passion for innovation and mastery of technology come together to craft software solutions that
-					   	captivate, streamline, and transform.
-					</p>
-					<p>
-						With every project, we weave enchantment into the digital realm, turning imagination into reality.
-						Welcome to a world where possibilities are boundless, and innovation knows no limits.
-					</p>
-					<p>
-						Step into a realm where potential knows no bounds, and creativity reigns supreme.
+						We believe that innovation thrives when knowledge is shared. Our mission extends beyond delivering 
+						solutions—we empower businesses, engineers, and enthusiasts through hands-on training, mentorship, 
+						and collaborative development. By sharing our expertise in software engineering, PCB design, and 
+						embedded systems, we help individuals and companies transform ideas into reality with confidence.
 					</p>
 					<div class="row">
 						<div class="col-md-6">
@@ -258,12 +270,16 @@ End Sticky Navigation
 									<i class="tf-circle-compass"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Innovative Solutions, Tailored for You</h4>
+									<h4 class="media-heading">Engineering the Future, One Solution at a Time</h4>
 									<p>
-										Every business is unique, and so are its challenges. Our seasoned team of engineers and
-										developers specializes in custom-tailored solutions that address your specific needs.
-										Whether it's crafting intuitive user interfaces, optimizing backend processes, or integrating
-										cutting-edge technologies, we're here to turn your vision into a digital masterpiece.
+										At Swimplify, technology is more than just circuits and code—it’s about creating 
+										solutions that inspire, streamline, and revolutionize industries. We design and 
+										develop systems that bridge the gap between hardware and software, ensuring seamless 
+										functionality in everything from consumer electronics to industrial automation.
+									</p>
+									<p>
+									Whether you're looking to develop cutting-edge technology, optimize existing processes, 
+									or gain in-depth technical knowledge, we’re here to guide you every step of the way.
 									</p>
 								</div>
 							</div>
@@ -274,13 +290,13 @@ End Sticky Navigation
 									<i class="tf-hotairballoon"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Crafting Experiences That Resonate</h4>
+									<h4 class="media-heading">Join Us in Shaping the Future</h4>
 									<p>
-										Technology should not only function flawlessly but should also leave a lasting impression.
-										Our approach goes beyond functionality; we're dedicated to creating experiences that resonate
-										with your audience. Through meticulous attention to detail, thoughtful design, and an unwavering
-										commitment to user-centricity, we transform software into an art form, ensuring your digital presence
-										stands out in a crowded landscape.
+									The future of technology is built by those who dare to innovate. At Swimplify, we’re committed 
+									to pushing boundaries, exploring new possibilities, and turning visions into real-world solutions.
+									</p>
+									<p>
+									Where software meets hardware, and imagination becomes reality—let’s build the future together.
 									</p>
 								</div>
 							</div>
@@ -299,11 +315,12 @@ Start Call To Action
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2>Ready to Embark on Your Next Digital Adventure?</h2>
+				<h2>Ready to Bring Your Vision to Life?</h2>
 				<p>
-					Let's turn your ideas into reality. Whether you have a specific project in mind or are seeking innovative solutions for
-					your business, we're eager to hear from you. Our team is poised to engineer the future together with you.<br>
-					Reach out to us today and let's kickstart something extraordinary.
+					Let’s transform your ideas into reality. Whether you’re developing a new product, optimizing existing 
+					technology, or exploring innovative solutions, we’re here to help. At Swimplify, we don’t just build—we 
+					collaborate, innovate, and engineer the future with you.<br>
+					Get in touch today, and let’s create something extraordinary together.
 				</p>
 				<a href="#contact-us" class="btn btn-main">Start a project with us</a>
 			</div>
@@ -324,9 +341,8 @@ Start Call To Action
 					<div class="border"></div>
 					
 				</div>
-				<!-- /section title -->
-				<h2 class="text-center mb-4">Empowering Efficiency and Elegance</h2>
-				
+				<!-- /section  subtitle -->
+				<h2 class="section-subtitle"><span>Empowering Innovation in Software & Hardware</span></h2>
 			</div>
 			
 			<!-- Single Service Item -->
@@ -335,12 +351,15 @@ Start Call To Action
 					<div class="service-icon text-center">
 						<i class="tf-ion-android-desktop"></i>
 					</div>
-					<h3>Custom Desktop Applications</h3>
+					<h3>Custom Software Development</h3>
 					<p>
-						Streamline your operations with bespoke desktop applications tailored to your unique workflow.
-						We craft elegant, user-friendly software that integrates seamlessly into your existing systems,
-						ensuring a cohesive and efficient working environment.
+						Unlock new levels of efficiency with tailored software solutions
 					</p>
+					<ul>
+						<li><span class="service-item">Desktop & Web Applications</span></li>
+						<li><span class="service-item">Cloud-Based Systems</span></li>
+						<li><span class="service-item">Automation & Integrations</span></li>
+					</ul>
 				</div>
 			</article>
 			<!-- End Single Service Item -->
@@ -349,14 +368,18 @@ Start Call To Action
 			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
 				<div class="service-block text-center">
 					<div class="service-icon text-center">
-						<i class="tf-ion-android-cloud-outline"></i>
+						<!-- <i class="tf-ion-android-cloud-outline"></i> -->
+						<i class="tf-ion-code-working"></i>
 					</div>
-					<h3>Cloud-Based Solutions</h3>
+					<h3>Embedded Systems & PCB Design</h3>
 					<p>
-						Embrace the future of business with our cloud-based applications. Accessible from anywhere, these
-						solutions offer unparalleled flexibility and scalability. Whether it's collaboration tools, data management
-						systems, or specialized applications, we've got you covered.
+						Bridging the gap between software and hardware
 					</p>
+					<ul>
+						<li><span class="service-item">Custom PCB Design & Prototyping</span></li>
+						<li><span class="service-item">Embedded Firmware Development</span></li>
+						<li><span class="service-item">IoT & Hardware Integration</span></li>
+					</ul>
 				</div>
 			</article>
 			<!-- End Single Service Item -->
@@ -367,12 +390,14 @@ Start Call To Action
 					<div class="service-icon text-center">
 						<i class="tf-ion-toggle"></i>
 					</div>
-					<h3>Elegant User Interface Design</h3>
+					<h3>Elegant User Experience & Interface Design</h3>
 					<p>
-						We understand that software is only as good as its user experience. Our design team specializes in creating
-						interfaces that are not only visually stunning but also incredibly user-friendly. Elevate your software experience
-						with elegance and simplicity at its core.
+						Software should be both functional and beautiful
 					</p>
+					<ul>
+						<li><span class="service-item">Intuitive and user-friendly UI/UX for applications</span></li>
+						<li><span class="service-item">Modern, clean design principles for optimal usability</span></li>
+					</ul>
 				</div>
 			</article>
 			<!-- End Single Service Item -->
@@ -381,136 +406,61 @@ Start Call To Action
 			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
 				<div class="service-block text-center">
 					<div class="service-icon text-center">
-						<i class="tf-ion-compass"></i>
+						<!-- <i class="tf-ion-compass"></i> -->
+						<i class="tf-tools"></i>
 					</div>
-					<h3>Streamlined User Training</h3>
+					<h3>Tech Coaching & Training</h3>
 					<p>
-						Transitioning to new software shouldn't be a daunting task. Our comprehensive training programs ensure that your
-						team can hit the ground running, maximizing the benefits of our solutions from day one.
+						Learn from an expert with hands-on guidance
 					</p>
+					<ul>
+						<li><span class="service-item">Software Development</span></li>
+						<li><span class="service-item">Electronics & PCB Design</span></li>
+						<li><span class="service-item">Embedded Programming</span></li>
+					</ul>
 				</div>
 			</article>
 			<!-- End Single Service Item -->
 
 			<!-- Single Service Item -->
 			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<!-- <i class="tf-ion-wrench"></i> -->
+						<i class="tf-ion-android-globe"></i>
+					</div>
+					<h3>Domain, Hosting & Web Solutions</h3>
+					<p>
+						Your gateway to a seamless online presence
+					</p>
+					<ul>
+						<li><span class="service-item">Domain Acquisition & Management </span></li>
+						<li><span class="service-item">Reliable Hosting Solutions</span></li>
+						<li><span class="service-item">Tailored Web Development</span></li>
+					</ul>
+				</div>
+			</article>
+
+			<!-- End Single Service Item -->
+
+						<!-- Single Service Item -->
+						<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
 				<div class="service-block text-center">
 					<div class="service-icon text-center">
 						<i class="tf-ion-wrench"></i>
 					</div>
-					<h3>Ongoing Support and Maintenance</h3>
+					<h3>Ongoing Support & Maintenance</h3>
 					<p>
-						We're not just a service provider; we're your partner in success. Our dedicated support team is always on hand to
-						address any issues, provide updates, and ensure that your software continues to meet the evolving needs of your business.
+					A trusted partner in your success
 					</p>
+					<ul>
+						<li><span class="service-item">Software & Hardware Support</span></li>
+						<li><span class="service-item">Training & Documentation</span></li>
+					</ul>
 				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-				<h4 class="text-center">
-					Discover the power of seamless, elegant software solutions. Partner with us and unlock new levels of efficiency and
-					productivity for your business.
-				</h4>
 			</article>
 			<!-- End Single Service Item -->
 		</div> <!-- End row -->
-
-		<div class="row">
-
-			<div class="col-lg-12">
-				<!-- /section title -->
-				<h2 class="text-center mt-5 mb-4">Your Gateway to the Digital World</h2>
-				
-			</div>
-			
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-android-globe"></i>
-					</div>
-					<h3>Domain Acquisition and Management</h3>
-					<p>
-						Selecting the perfect domain is crucial to establishing a memorable online identity. We guide you through the domain
-						selection process, secure your chosen domain, and manage it on your behalf.
-					</p>
-				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-android-cloud-done"></i>
-					</div>
-					<h3>Reliable Hosting Solutions</h3>
-					<p>
-						Our robust hosting infrastructure ensures your website is not only secure but also lightning-fast. Experience unparalleled
-						uptime and performance, backed by our team of experts.
-					</p>
-				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-code-working"></i>
-					</div>
-					<h3>Tailored Web Development</h3>
-					<p>
-						Leave the technical intricacies to us. Our seasoned developers will bring your vision to life with a website that not only
-						looks stunning but also functions flawlessly. We focus on user-centric design and intuitive navigation to create an exceptional
-						online experience.
-					</p>
-				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-refresh"></i>
-					</div>
-					<h3>Ongoing Updates and Maintenance</h3>
-					<p>
-						The digital landscape is constantly evolving, and so should your website. Our team handles regular updates, security patches,
-						and content changes, ensuring your online presence remains fresh, relevant, and secure.
-					</p>
-				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-tools"></i>
-					</div>
-					<h3>Dedicated Support and Training</h3>
-					<p>
-						We're here to assist you every step of the way. Our support team provides guidance, answers your questions, and offers training
-						to help you make the most of your website.
-					</p>
-				</div>
-			</article>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-				<h4 class="text-center">
-					Embark on your digital journey with confidence. Let us be your trusted partner in creating and maintaining a vibrant, effective online presence.
-				</h4>
-			</article>
-			<!-- End Single Service Item -->
-		</div> <!-- End row -->
-
-
 	</div> <!-- End container -->
 </section> <!-- End section -->
 
@@ -531,52 +481,69 @@ Start Call To Action
 		</div> <!-- End row -->
 		<div class="row">
 			<div class="col-md-6">
-				<h2>We’ve skilled in wide range of cutting-edge technologies and platforms</h2>
+				<h2>We’ve skilled in wide range of cutting-edge technologies</h2>
 				<p>
-					These skills highlight the technical prowess of your team, showcasing their capabilities in handling complex software development
-					and deployment processes. This section should resonate with clients seeking advanced technical expertise for their projects.
+					We specialize in a wide range of cutting-edge technologies, bridging software and hardware development to deliver innovative solutions. Our expertise ensures seamless integration, optimized performance, and scalable solutions tailored to your needs.
 				</p>
-				<img class="img-fluid" src="images/about/company-growth.png" alt="">
+				<div class="chart-container mt-4">
+        			<canvas id="skillChart"></canvas>
+    			</div>
 			</div>
 			<div class="col-md-6 mt-4 mt-md-0">
 				<ul class="skill-bar">
 					<li>
-						<p><span>01-</span> Full-Stack Development</p>
+						<p><span>01-</span> Full-Stack Software Development</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-								style="width:100%">
+								style="width:95%">
 							</div>
 						</div>
 					</li>
 					<li>
-						<p><span>02-</span> Cloud Architecture and Deployment</p>
+						<p><span>02-</span> Cloud Architecture & Deployment</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-								style="width:100%">
+								style="width:95%">
 							</div>
 						</div>
 					</li>
 					<li>
-						<p><span>03-</span> Database Management and Optimization</p>
+						<p><span>03-</span> Database Management & Optimization</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-								style="width:100%">
+								style="width:85%">
 							</div>
 						</div>
 					</li>
 					<li>
-						<p><span>04-</span> DevOps and CI/CD Pipelines</p>
+						<p><span>04-</span> Embedded Systems & Firmware Development</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-								style="width:100%">
+								style="width:90%">
 							</div>
 						</div>
 					</li>
 					<li>
-						<p><span>05-</span> Containerization and Orchestration</p>
+						<p><span>05-</span> PCB Design & Hardware Integration</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-								style="width:100%">
+								style="width:95%">
+							</div>
+						</div>
+					</li>
+					<li>
+						<p><span>06-</span> DevOps & CI/CD Pipelines</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:75%">
+							</div>
+						</div>
+					</li>
+					<li>
+						<p><span>07-</span> Containerization & Orchestration</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:70%">
 							</div>
 						</div>
 					</li>
@@ -586,7 +553,152 @@ Start Call To Action
 	</div> <!-- End container -->
 </section> <!-- End section -->
 
+<!-- Start Portfolio Section
+=========================================== -->
 
+<section class="portfolio section" id="portfolio">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2>Our <span class="color">Works</span></h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+			</div> <!-- /end col-lg-12 -->
+		</div> <!-- end row -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="portfolio-filter">
+					<button class="active" type="button" data-filter="all">All</button>
+					<button type="button" data-filter="software">Software</button>
+					<button type="button" data-filter="hardware">Hardware</button>
+				</div>
+			</div>
+		</div>
+		<div class="row mx-auto filtr-container">
+			<div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/toneroom.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/toneroom.gif"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Web App</a></h4>
+						
+						<p class="mb-0">Artists managment system</p>
+					</div>
+				</div>
+			</div>
+			<div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/cliapp-agora.png" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/cliapp-agora.gif"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">CLI App</a></h4>
+						<p class="mb-0">Command Line Aplication for promotions managment on Ecommerce platform.</p>
+					</div>
+				</div>
+			</div>
+			<div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/kawacrm.png" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/kawacrm.gif"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Custmed CRM</a></h4>
+						<p class="mb-0">Customed system for services orders managment.</p>
+					</div>
+				</div>
+			</div>
+			<div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/agora-dash.png" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/agora-dash.gif"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Dashboards</a></h4>
+						<p class="mb-0">Product managment and stock inventory for ecomerce.</p>
+					</div>
+				</div>
+			</div>
+			<div class="filtr-item col-lg-4 col-md-6" data-category="hardware">
+				<div class="portfolio-block">
+					<img src="images/portfolio/quadpower-promo.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/quadpower-promo.jpg"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">QuadPower</a></h4>
+						<p class="mb-0">Motor Driver Board, High-Performance 4-Motor Controller</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/portfolio-6.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-6.jpg"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Tag Design</a></h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+					</div>
+				</div>
+			</div> -->
+			<div class="filtr-item col-lg-4 col-md-6" data-category="hardware">
+				<div class="portfolio-block">
+					<img src="images/portfolio/evokecore-promo.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/evokecore-promo.jpg"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">EvokeCore</a></h4>
+						<p class="mb-0">Development Board, for rapid prototyping</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="filtr-item col-lg-4 col-md-6" data-category="hardware">
+				<div class="portfolio-block">
+					<img src="images/portfolio/portfolio-8.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-8.jpg"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Stationary Design</a></h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="filtr-item col-lg-4 col-md-6" data-category="software">
+				<div class="portfolio-block">
+					<img src="images/portfolio/portfolio-1.jpg" alt="">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg"
+							data-lightbox="image-1">
+							<i class="tf-ion-android-search"></i>
+						</a>
+						<h4><a href="">Tag Design</a></h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div> <!-- end container -->
+</section> <!-- End section -->
 
 <!--
 Start Counter Section
@@ -644,6 +756,90 @@ Start Counter Section
 	</div> <!-- end container -->
 </section> <!-- end section -->
 
+<!-- Products section
+=========================================== -->
+
+<section id="products" class="pricing section section-bg">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+					<h2>Our<span class="color"> Products</span></h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+
+			<!-- single pricing table -->
+			<div class="col-lg-6 col-md-6 text-center wow fadeInUp" data-wow-duration="200ms">
+
+				<div class="price-item">
+					
+					<img src="images/products/quadPower.png" class="img-fluid w-100 mt-3" style="max-width: 300px; height: auto;" alt="">
+					
+					<!-- plan name & value -->
+					<div class="price-title">
+						<h3>QuadPower</h3>
+						<p><strong class="value">$80</strong> AUD</p>
+						<div class="service-item">Motor Driver Board – High-Performance 4-Motor Controller.</div>
+					</div>
+					<!-- /plan name & value -->
+
+					<!-- plan description -->
+					<ul>
+						<li>Control 4 Motors Independently</li>
+						<li>High-Power Support</li>
+						<li>Dual L298P H-Bridge Drivers</li>
+						<li>PWM Speed Control</li>
+						<li>Current Sensing Output</li>
+						<li>Compact and Efficient Design</li>
+						<li>Plug & Play Connectivity</li>
+					</ul>
+					<!-- /plan description -->
+
+					<!-- signup button -->
+					<a class="btn btn-transparent" href="product.php">Learn More</a>
+					<!-- /signup button -->
+
+				</div>
+			</div>
+			<!-- end single pricing table -->
+
+			<!-- single pricing table -->
+			<!-- <div class="col-lg-6 col-md-6 text-center wow fadeInUp" data-wow-duration="500ms"
+				data-wow-delay="400ms">
+				<div class="price-item">
+				<img src="images/products/evokeCore.png" class="img-fluid w-100 mt-3" style="max-width: 260px; height: auto;" alt="">
+	
+					<div class="price-title">
+						<h3>EvokeCore</h3>
+						<p><strong class="value">$99</strong> AUD</p>
+						<div class="service-item">High-performance microcontroller board for rapid prototyping.</div>
+					</div>
+
+					<ul>
+						<li>Dual Power Supply Options</li>
+						<li>Efficient Power Regulation</li>
+						<li>Microcontroller-Based Design</li>
+						<li>Dedicated Programming Interface</li>
+						<li>Expandable Connectivity</li>
+						<li>User-Friendly Debugging Features</li>
+						<li>Compact & Versatile Form Factor</li>
+					</ul>
+
+					<a class="btn btn-transparent" href="#">Learn More</a>
+			
+
+				</div>
+			</div> -->
+			<!-- end single pricing table -->
+
+
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
 
 
 <!-- Start Testimonial
@@ -744,7 +940,7 @@ Start Counter Section
 
 <!-- Start Blog Section
 =========================================== -->
-<section id="blog" class="section">
+<section id="learn2code" class="section">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -756,21 +952,23 @@ Start Counter Section
 				<!-- /section title -->
 			</div>
 			<div class="container">
-			<div class="content-block">
-				<h2>Empowering Aspiring Developers</h2>
+			<div class="content-block mb-5">
+				<h2 class="section-subtitle text-left"><span>Empowering Future Innovators</span></h2>
 				<p>
-					Are you eager to embark on a coding journey, but not sure where to start? Our Learn2Code hub is here to guide
-					you through the exciting world of programming. We believe that anyone can learn to code with the right resources
-					and a bit of dedication.
+				Ready to dive into the world of technology but not sure where to begin? Our Learn2Code hub is your gateway 
+				to mastering both software and hardware development. Whether you’re looking to write your first line of code 
+				or design your first PCB, we’re here to guide you every step of the way.
 				</p>
 				<p>
-					Here, you'll find a collection of quick, step-by-step guides that cover a wide range of topics from setting up
-					your development environment to building your first application. Our tutorials are designed to be accessible to beginners
-					while providing valuable insights for those looking to deepen their skills.
+				With a focus on software development, embedded systems, and hardware design, we provide hands-on tutorials 
+				and step-by-step guides tailored to all levels—from beginners to advanced learners. Our resources will help 
+				you get up to speed with everything from setting up your development environment to designing custom circuits 
+				and writing embedded firmware.
 				</p>
 				<p>
-					Check back regularly for new tutorials and coding tips, and take the first steps toward mastering the art of programming.
-					The possibilities are endless, and your coding journey starts here!
+				Explore new tutorials regularly and gain insights into the latest technologies, tools, and best practices 
+				in both programming and hardware prototyping. Whether you’re building a web app, learning embedded systems, 
+				or designing smart devices, your learning journey starts here, with endless possibilities ahead.
 				</p>
 			</div>
 			</div>
@@ -783,64 +981,17 @@ Start Counter Section
 						<img src="images/blog/blog-post-1.jpg" alt="amazing caves coverimage" class="img-fluid">
 					</div>
 					<div class="content">
-						<h3><a href="https://github.com/SWimplifyDev/python-venv-quick-guide">Setting Up Your Python Playground</a></h3>
+						<h3><a href="blog-single.html">Setting Up Your Python Playground</a></h3>
 						<p>
 							Welcome to our inaugural quick code guide! Today, we're diving into a fundamental skill for Python developers - setting
 							up a virtual environment.
 						</p>
-						<a class="btn btn-transparent" href="https://github.com/SWimplifyDev/python-venv-quick-guide" target="_blank">Read more <i class="tf-ion-social-github"></i></a>
+						<a class="btn btn-transparent" href="https://swimplify.gitbook.io/python-virtual-environment" target="_blank">Read more</a>
 					</div>
 				</div>
 			</article>
 			<!-- /single blog post -->
 
-			<!-- single blog post -->
-			<!-- <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="post-block">
-					<div id="gallery-post" class="media-wrapper">
-						<div class="item">
-							<img src="images/blog/blog-post-1.jpg" alt="blog post" class="img-fluid">
-						</div>
-						<div class="item">
-							<img src="images/blog/blog-post-3.jpg" alt="blog post" class="img-fluid">
-						</div>
-						<div class="item">
-							<img src="images/blog/blog-post-2.jpg" alt="blog post | Meghna" class="img-fluid">
-						</div>
-					</div>
-
-					<div class="content">
-						<h3><a href="blog.html">Simple Slider Post</a></h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-							moon officia aute, non skateboard dolor brunch.</p>
-						<a class="btn btn-transparent" href="blog-single.html">Read more</a>
-					</div>
-				</div>
-			</article> -->
-			<!-- end single blog post -->
-
-			<!-- single blog post -->
-			<!-- <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="post-block">
-					<div class="media-wrapper">
-						<img src="images/blog/blog-post-6.jpg" alt="amazing caves coverimage" class="img-fluid">
-					</div>
-
-					<div class="content">
-						<h3><a href="blog.html">Simple Image Post</a></h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-							moon officia aute, non skateboard dolor brunch.</p>
-						<a class="btn btn-transparent" href="blog-single.html">Read more</a>
-					</div>
-				</div>
-			</article> -->
-			<!-- end single blog post -->
-
-			<!-- <div class="col-12">
-				<div class="all-post text-center">
-					<a class="btn btn-main" href="blog.html">View All Post</a>
-				</div>
-			</div> -->
 		</div> <!-- end row -->
 	</div> <!-- end container -->
 </section> <!-- end section -->
@@ -864,7 +1015,9 @@ Start Counter Section
 			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
 				<h3>Contact Details</h3>
 				<p>
-					Have a project in mind or just curious about how we can assist you in your digital journey? We'd love to hear from you!
+				Got a project in mind or curious about how we can help you bridge the gap between software and hardware? 
+				Whether you're looking to develop custom applications, design PCBs, or explore embedded systems, we'd love 
+				to hear from you and discuss how we can bring your ideas to life!
 				</p>
 				<p>
 					Use the form to drop us a message. Our team will get back to you promptly.
@@ -874,17 +1027,6 @@ Start Counter Section
 						<i class="tf-map-pin"></i>
 						<span>Sportsmans Drive, West Lakes, Australia</span>
 					</div>
-
-					<!-- <div class="con-info clearfix">
-						<i class="tf-ion-ios-telephone-outline"></i>
-						<span>Phone: +61-424-749403</span>
-					</div> -->
-
-					<!-- <div class="con-info clearfix">
-						<i class="tf-ion-iphone"></i>
-						<span>Fax: +880-31-000-000</span>
-					</div> -->
-
 					<div class="con-info clearfix">
 						<i class="tf-ion-ios-email-outline"></i>
 						<span>Email: <a href="mailto:team@swimplify.co">team@swimplify.co</a></span>
@@ -933,6 +1075,9 @@ Start Counter Section
 
 </section> <!-- end section -->
 
+
+
+
 <!-- end Contact Area
 ========================================== -->
 <footer id="footer" class="bg-one">
@@ -974,6 +1119,6 @@ Start Counter Section
 	<script src="plugins/wow/wow.min.js"></script>
 	<!-- Custom js -->
 	<script src="js/script.js"></script>
-	
+
 	</body>
 </html>

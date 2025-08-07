@@ -79,54 +79,66 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <!-- Sticky Navigation
-==================================== -->
-<header id="navigation" class="navigation">
-  <div class="container">
-    <div class="navbar-header w-100">
-      <nav class="navbar navbar-expand-lg navbar-dark px-0">
-        <!-- logo -->
-        <a class="navbar-brand logo" href="index.php">
-          <img src="images/logo.png" alt="Website Logo" width="150" class="d-inline-block align-text-top"/>
-        </a>
-        <!-- /logo -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar01">
-          <ul class="navbar-nav navigation-menu ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#blog">Learn2Code</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact-us">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- End Sticky Navigation
-==================================== -->
+  	<!--
+	Start Preloader
+	==================================== -->
+	<div class="preloader">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+	<!-- End Preloader
+	==================================== -->
+	 <!-- Sticky Navigation
+	==================================== -->
+	<header class="navigation-dark">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+		  <div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="Website Logo">
+			</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarText">
+		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#home">Home</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#about">About</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#services">Services</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#products">Products</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#learn2code">Learn2Code</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html#contact-us">Contact</a>
+		          </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+	<!-- End Sticky Navigation
+	==================================== -->
 <div id="products" class="container mt-5">
   <section class="product-container">
     <div class="row">      
@@ -263,7 +275,7 @@
 	
 	<!-- Main jQuery -->
 	<script src="plugins/jquery/jquery.min.js"></script>
-	<!-- Bootstrap 3.1 -->
+	<!-- Bootstrap  -->
 	<script src="plugins/bootstrap/bootstrap.min.js"></script>
 	<!-- Slick Carousel -->
 	<script src="plugins/slick-carousel/slick.min.js"></script>

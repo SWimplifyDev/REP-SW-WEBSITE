@@ -6,33 +6,13 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://swimplify.co/#about</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+     <loc>https://swimplify.co/qa-services</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://swimplify.co/#services</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://swimplify.co/#portfolio</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://swimplify.co/#products</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://swimplify.co/#learn2Code</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://swimplify.co/#contact-us</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+     <loc>https://swimplify.co/product</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.8</priority>
    </url>
 </urlset>

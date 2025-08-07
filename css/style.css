@@ -545,8 +545,9 @@ a:hover {
   margin-right: 0.5rem;
 }
 
-.navigation-dark a:hover {
-  color: #57cbcc;
+.navigation-dark a:hover,
+.navigation-dark a:focus {
+  color: #57cbcc !important;
 }
 
 .navigation-dark .navbar-toggler {
@@ -591,7 +592,8 @@ a:hover {
   font-size: 16px;
   color: #737f8a;
 }
-.navigation .navigation-menu a:hover, .navigation .navigation-menu a:focus {
+.navigation .navigation-menu a:hover, 
+.navigation .navigation-menu a:focus {
   background: transparent;
   color: #57cbcc !important;
 }

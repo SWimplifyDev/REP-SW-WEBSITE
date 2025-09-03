@@ -1,50 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 Not Found</title>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-    }
+  <head>
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDC7RYYCZW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-RDC7RYYCZW');
+	</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 Not Found</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="not-found">
 
-    p {
-      font-size: 2rem;
-      color: #afbac4;
-      margin: 10px 0 30px;
-    }
-
-  </style>
-    	<!-- CSS
-  	================================================== -->
-  	<!-- Fontawesome Icon font -->
-  	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
-  	<!-- bootstrap.min css -->
-  	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  	<!-- Animate.css -->
-  	<link rel="stylesheet" href="plugins/animate-css/animate.css">
-  	<!-- Magnific popup css -->
-  	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-  	<!-- Slick Carousel -->
-  	<link rel="stylesheet" href="plugins/slick-carousel/slick.css">
-  	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
-  	<!-- Main Stylesheet -->
-  	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1 style="font-size: 6rem; color: #57cbcc;">404</h1>
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <a class="btn btn-transparent" href="/">Go Home</a>
-  </div>
-</body>
+    <section>
+        <div class="container">
+            <div class="not-found-message">
+                <h1>404</h1>
+                <p>Oops! The page you're looking for doesn't exist.</p>
+                <a href="/" class="main-cta-blk">Return</a>
+            </div>
+        </div>
+    </section>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
 </html>

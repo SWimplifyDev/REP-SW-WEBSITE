@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://swimplify.co/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-     <loc>https://swimplify.co/services/web-apps</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.8</priority>
-   </url>
-   <url>
-     <loc>https://swimplify.co/services/automation</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.8</priority>
-   </url>
-   <url>
-   <url>
-     <loc>https://swimplify.co/services/api-development</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.8</priority>
-   </url>
-   <url>
-   <url>
-     <loc>https://swimplify.co/services/hardware-integration</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.8</priority>
-   </url>
-   <url>
-   <url>
-     <loc>https://swimplify.co/product</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.8</priority>
-   </url>
-</urlset>
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Homepage -->
   <url>

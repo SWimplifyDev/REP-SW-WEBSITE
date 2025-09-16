@@ -40,9 +40,8 @@
     <meta property="twitter:image" content="https://www.swimplify.co/assets/web-apps-preview.png">
 
     <!-- Styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-          rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-          crossorigin="anonymous">
+    <!-- 🏋️‍♂️ LightWeight CSS -->
+    <link rel="stylesheet" href="https://swimplifydev.github.io/LightWeight/dist/style.css">
     <link rel="stylesheet" href="../style.css">
     <!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="/assets/favicon.png" />
@@ -54,46 +53,30 @@
     <!-- ============================= -->
     <!-- 📌 HEADER START -->
     <!-- ============================= -->
-    <header class="navigation">
-		<nav class="navbar navbar-expand-lg">
-		  <div class="container no-padding">
-			<a class="navbar-brand" href="/">
-				<img src="../assets/logo.png" alt="Website Logo">
-			</a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarText">
-		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-		          <li class="nav-item">
-		            <a class="nav-link" href="/">Home</a>
-		          </li>
-		            <li class="nav-item dropdown">
-		                <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/services/web-apps">Web Apps</a></li>
-                            <li><a class="dropdown-item" href="/services/automation.html">Automation</a></li>
-                            <li><a class="dropdown-item" href="/services/api-development.html">APIs</a></li>
-                            <li><a class="dropdown-item" href="/services/hardware-integration.html">Hardware</a></li>
+    <header>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="navbar-logo"><img src="/assets/swimplify-logo.png" alt="swimplify-logo"></div>
+                <ul id="navbar-menu" class="navbar-links">
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a class="navbar-submenu-btn" href="">Services <i class="bi bi-chevron-down"></i></a>
+                        <ul class="navbar-submenu">
+                            <li><a href="/services/web-apps">Web Apps</a></li>
+                            <li><a href="/services/automation">Automation</a></li>
+                            <li><a href="/services/api-development">APIs</a></li>
+                            <li><a href="/services/hardware-integration">Hardware</a></li>
                         </ul>
                     </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="/#our-work">Portfolio</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="/#why-us">Why Us</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="/#contact-us">Contact</a>
-		          </li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+                    <li><a href="/#our-work">Portfolio</a></li>
+                    <li><a href="/#why-us">Why Us</a></li>
+                    <li><a href="/#contact-us">Contact</a></li>
+                </ul>
+                <button id="navbar-menu-btn" class="navbar-btn-menu"><i class="bi bi-list"></i></button>
+            </div>
+        </nav>
     </header>
-
-    <!-- 📌 HEADER END -->
+    <!-- 📌 HEADER END -->  
 
 
     <!-- ============================= -->
@@ -121,51 +104,49 @@
     <section class="overview section-wht">
         <div class="container">
             <h2 class="section-tittle-drk">overview</h2>
-            <div class="row">
-                <div class="col-lg-7 overview-summ">
+            <div class="overview-wrapper">
+                <div class="overview-summ">
                     <p>Your business deserves more than a template. We design and develop custom web applications that adapt to
                         your unique workflows, scale with your growth, and integrate seamlessly with your existing systems.
                         Whether you need a lightweight tool to streamline operations or a full-scale SaaS platform, we make it happen.</p>
                 </div>
-                <div class="col-lg-5">
-                    <div class="server-rack">
-                        <div class="server-cover"></div>
-                        <div class="server-module">
-                            <div class="server-lights">
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light half-sec-blink"></div>
-                            </div>
-                            <i class="bi bi-diagram-3"></i>workflow
+                <div class="server-rack">
+                    <div class="server-cover"></div>
+                    <div class="server-module">
+                        <div class="server-lights">
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light half-sec-blink"></div>
                         </div>
-                        <div class="server-module">
-                            <div class="server-lights">
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light quarter-sec-blink"></div>
-                                <div class="square-light"></div>
-                            </div>
-                            <i class="bi bi-speedometer2"></i>dashboard
+                        <i class="bi bi-diagram-3"></i>workflow
+                    </div>
+                    <div class="server-module">
+                        <div class="server-lights">
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light quarter-sec-blink"></div>
+                            <div class="square-light"></div>
                         </div>
-                        <div class="server-module">
-                            <div class="server-lights">
-                                <div class="square-light sec-blink"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                            </div>
-                            <i class="bi bi-cloud-check"></i>secure cloud
+                        <i class="bi bi-speedometer2"></i>dashboard
+                    </div>
+                    <div class="server-module">
+                        <div class="server-lights">
+                            <div class="square-light sec-blink"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
                         </div>
-                        <div class="server-module">
-                            <div class="server-lights">
-                                <div class="square-light"></div>
-                                <div class="square-light quarter-sec-blink"></div>
-                                <div class="square-light"></div>
-                                <div class="square-light"></div>
-                            </div>
-                            <i class="bi bi-hdd-network"></i>integration
+                        <i class="bi bi-cloud-check"></i>secure cloud
+                    </div>
+                    <div class="server-module">
+                        <div class="server-lights">
+                            <div class="square-light"></div>
+                            <div class="square-light quarter-sec-blink"></div>
+                            <div class="square-light"></div>
+                            <div class="square-light"></div>
                         </div>
+                        <i class="bi bi-hdd-network"></i>integration
                     </div>
                 </div>
             </div>
@@ -274,8 +255,8 @@
     <!-- ============================= -->
     <section class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="footer-items">
+                <div class="services">
                     <h3>services</h3>
                     <ul>
                         <li><a href="/services/web-apps">Custom Web Apps</a></li>
@@ -284,7 +265,7 @@
                         <li><a href="/services/hardware-integration">Hardware Integration</a></li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="industries">
                     <h3>industries</h3>
                     <ul>
                         <li><a href="">Startups</a></li>
@@ -306,6 +287,7 @@
     <!-- 📌 WHY FOOTER SECTION END -->
 
     <script src="main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- 🏋️‍♂️ LightWeight JS -->
+    <script src="https://swimplifydev.github.io/LightWeight/dist/components.js"></script>
   </body>
 </html>

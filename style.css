@@ -1299,6 +1299,40 @@ body {
         font-size: 10em;
     }
 }
+
+/* ----- AI (ai.html) ----- */
+/* -------------------------------------------- */
+
+.mcp-abst-img {
+    height: 180px;
+    background-image: url(assets/mcp-abst-img.png);
+    
+    
+    border-radius: 1em;
+}
+
+@media (min-width: 992px) {
+    .ai .sub-page-hero h1 {
+        width: 50%;
+
+    }
+
+    .mcp-abst-img {
+        height: 300px;
+    }
+    .ai-overview-wrapper {
+        display: flex;
+        gap: 1em;
+    }
+    .ai-overview-wrapper .overview-summ {
+        flex: 1.5;
+
+    }
+    .ai-overview-wrapper .mcp-abst-img {
+        flex: 1;
+    }
+}
+
 /* ==================================== */
 /* 04. UTILITIES                        */
 /* ==================================== */

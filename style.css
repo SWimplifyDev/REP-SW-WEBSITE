@@ -1333,6 +1333,48 @@ body {
     }
 }
 
+
+/* ----- Training (training.html) ----- */
+/* -------------------------------------------- */
+
+.training .focus-areas h3 {
+    margin-top: 0;
+}
+
+.training .focus-areas p {
+    padding: .5em 1em;
+    border-left: .5em solid var(--color-terminal);
+    background-color: #fafafa;
+    border-radius: .5em;
+    margin-bottom: 0;
+}
+
+.training .learning-wrapper .mcp-abst-img {
+    margin-top: 3em;
+
+}
+
+@media (min-width: 992px) {
+    .focus-areas {
+        font-size: 1.4em;
+        line-height: 2.1em;
+    }
+
+    .learning-wrapper {
+        display: flex;
+        gap: 2em;
+    }
+
+    .learning-wrapper .focus-areas {
+        flex: 1.5;
+
+    }
+    .learning-wrapper .mcp-abst-img {
+        flex: 1;
+
+    }
+}
+
 /* ==================================== */
 /* 04. UTILITIES                        */
 /* ==================================== */

@@ -28,16 +28,14 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
-/* ------ HEADER */
+/* ------ REGISTRATION PAGE */
 
 .info p span {
     font-weight: bold;
 }
-
 .info p {
     text-align: justify;
 }
-
 
 .registration {
     margin-top: 2em;
@@ -48,15 +46,12 @@ body {
 }
 
 .event-date {
-    font-size: 1.3em;
-    
+    font-size: 1.3em;    
 }
 
 .event-date .the-when{
     border-bottom: .1em solid black;
 }
-
-
 
 .event-date .date {
     color: red;
@@ -86,14 +81,19 @@ body {
     margin-bottom: 1.5em;
 }
 
+.sponsors img {
+    height: 30px;
+}
+
+.sponsors .corfi-logo {
+    filter: invert(100%);
+}
+
 .sponsors .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-}
-
-.sponsors img {
-    max-width: 120px;
+    gap: 1.6em;
+    justify-content: center;
 }
 
 footer {
@@ -118,16 +118,57 @@ footer {
     gap: 2em;
 }
 
-.qr-banner {
-    height: 200px;
+.black-ribon {
     background-color: black;
     color: white;
     margin-bottom: 2em;
+    padding: .5em 1em;
 }
+
+
+.black-ribon .bi-qr-code {
+    font-size: 9em;
+}
+
+.ribon-qr,
+.ribon-socials {
+    display: none;
+}
+
+.ribon-sponsors span:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.ribon-sponsors span:nth-of-type(2) {
+  color: white;
+  text-decoration: none;
+}
+
+.ribon-sponsors {
+    font-size: .9em;
+}
+
+
+.phone-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.phone-link:hover,
+.phone-link:active {
+  text-decoration: underline; /* optional */
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 
 /* For big screens */
 @media (min-width: 992px) {
-    .img-logo img {
+    .anif-logo img {
         margin-top: .3em;
         width: 30%;
     }
@@ -163,6 +204,10 @@ footer {
         margin-bottom: 10em;
         
     }
+
+    .sponsors img {
+        height: 50px;
+    }
     .sponsors .list {
         gap: 5em;
     }
@@ -170,11 +215,46 @@ footer {
         font-size: 2.5em;
     }
 
+    .black-ribon {
+        display: flex;
+        align-items: center;
+    }
+
+    .ribon-qr {
+        flex: .4;
+    }
+    .ribon-socials {
+        flex: 1;
+    }
+    .ribon-sponsors {
+        flex: 1;
+    }
+
+    .ribon-qr,
+    .ribon-socials {
+        display:block;
+    }
+
+    .ribon-socials {
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: .6em;
+    }
+    .ribon-socials .socials-icons {
+        display: flex;
+        gap: 1em;
+    }
+    .ribon-sponsors {
+        font-size: 1.2em;
+        padding: 2.5em 2.5em;
+        border-left: .1em solid white;
+    }
+
     footer {
         display: flex;
         align-items: center;
         padding: 2em .5em;
-        
     }
 
     .anif-url {
@@ -192,6 +272,83 @@ footer {
         flex: 1;
         text-align: center;
         margin-bottom: 0;
+    }
+}
+
+/* ------ LIVE PAGE */
+
+.aaa-logo {
+    text-align: center;
+}
+
+.video-wrapper {
+    margin-top: 2em;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.animated-banner {
+    margin-top: 1em;
+    text-align: center;
+}
+.animated-banner img {
+    height: 30px;
+}
+
+.speakes-section {
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+
+.speakes-section h2 {
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+.speakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.speakers-list img {
+    height: 350px;
+}
+
+.speakes-section .button-download {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.button-download a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 992px) {
+    .aaa-logo img {
+        margin-top: 1em;
+        width: 60%;
+    }
+    .animated-banner img {
+        height: 100%;
+    }
+
+    .speakes-section h2 {
+        font-size: 4em;
     }
 }
 
@@ -1165,8 +1322,8 @@ footer {
 }
 
 .input-group input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 10000px #000000 inset;
-  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 10000px white inset;
+  -webkit-text-fill-color: black;
 }
 
 .input-group:focus-within label {

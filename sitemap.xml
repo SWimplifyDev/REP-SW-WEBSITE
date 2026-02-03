@@ -3,51 +3,51 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.swimplify.co/</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Individual services -->
   <url>
-    <loc>https://www.swimplify.co/services/ai</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/ai</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.swimplify.co/services/web-apps</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/web-apps</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.swimplify.co/services/automation</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/automation</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.swimplify.co/services/api-development</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/api-development</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.swimplify.co/services/hardware-integration</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/hardware-integration</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.swimplify.co/services/training</loc>
-    <lastmod>2025-09-22</lastmod>
+    <loc>https://swimplify.co/services/training</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

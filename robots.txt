@@ -1,1 +1,1 @@
-Sitemap: https://www.swimplify.co/sitemap.xml
+Sitemap: https://swimplify.co/sitemap.xml
